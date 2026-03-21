@@ -668,4 +668,55 @@ input.success,
 textarea.success {
   border: 2px solid green;
 }
+.heroo {
+  position: relative;
+  background: url("../pr-img/hero-bg.jpeg") center/cover no-repeat; 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.heroo .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05); 
+  z-index: 1;
+}
+.heroo .content {
+  position: relative;
+  z-index: 2; 
+  text-align: center;
+  color: #333;
+}
+
+
+.heroo nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2; 
+}
+
+.about-hero-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-hero-content p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
 
