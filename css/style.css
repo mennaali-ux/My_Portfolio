@@ -11,7 +11,7 @@ body {
 }
 
 #hero {
-  background: url("/pr-img/hero\ bg.jpeg");
+  background: url("/pr-img/hero-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -32,8 +32,7 @@ i {
 .hero-img {
 
   max-width: 100%; 
-
-   border-radius: 60% 40% 50% 50%; /* شكل زجزاج/organic */
+   border-radius: 60% 40% 50% 50%; 
   margin-left: 150px;
   margin-top: 90px; 
   margin-bottom: 100px;
@@ -79,7 +78,7 @@ margin-top:20px;
 }
 #about {
   background-color: #fff8e7;
-   padding-top: 20px; /* قلليها لو عايزة أكتر */
+   padding-top: 20px; 
   padding-bottom: 20px;
   padding: 80px 0;
 }
@@ -137,13 +136,13 @@ h2,
 
 }
 #contact {
-  background: url("/pr-img/contact\ bg.jpeg");
+  background: url("/pr-img/contact-bg.jpeg");
   margin-top: 300px;
   min-height: 100vh;
  text-align: center;
 }
 #contact-p{
-    background: url("/pr-img/contact\ bg.jpeg"); 
+    background: url("/pr-img/contact-bg.jpeg"); 
      min-height: 100vh;
     text-align: center;
 }
