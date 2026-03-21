@@ -29,7 +29,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link p-4" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link p-4 " aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link  p-4" href="about.html">About</a>
@@ -52,8 +52,8 @@
             </nav>
             <div class="hero-content">
                 <div class="row">
-                    <div class="col-lg-6 h-text">
-                        <h1 class="text-light p-2"><span>Contact</span> Me</h1>
+                    <div class="col-lg-6 h-text" data-aos="fade-right">
+                        <h1 class="text-light p-2"><span>Hi</span> ,I'm Menna Ali Hassan</h1>
                         <h3 class="text-light ">Front-End Developer & Web Designer</h3>
                         <p class="text-light p-2 ">I create modern, responsive websites using HTML, CSS, and JavaScript.
                         </p>
@@ -64,8 +64,8 @@
                             <div class="i-d"><i class="fa-brands fa-linkedin"></i></div>
                         </div>
                     </div>
-                    <div class="col-lg-6 ">
-                        <img src="pr-img/hero.jpeg" alt="Menna" class="img-fluid hero-img shadow w-50">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <img src="pr-img/-removebg-preview.png" alt="Menna" class="img-fluid hero-img shadow w-50">
                     </div>
                 </div>
             </div>
@@ -81,75 +81,50 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-8 mx-auto">
                     <form id="contactForm">
 
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Your Name" required>
+                            <label>Name</label>
+                            <input type="text" id="name" placeholder="Your Name">
+                            <small class="error" id="nameError"></small>
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Your Email" required>
+                            <label>Email</label>
+                            <input type="email" id="email" placeholder="Your Email">
+                            <small class="error" id="emailError"></small>
                         </div>
 
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                            <label>Phone</label>
+                            <input type="text" id="phone" placeholder="Your Phone">
+                            <small class="error" id="phoneError"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+                            <small class="error" id="messageError"></small>
                         </div>
 
                         <button type="submit">Send Message</button>
+                    </form>
 
                     </form>
 
                 </div>
-                <div class="col-lg-6 contact-info">
-                    <div class="info-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span class="text-dark">Banha, Egypt</span>
-                    </div>
 
-                    <div class="info-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span class="text-dark">menna@email.com</span>
-                    </div>
-
-                    <div class="info-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <span class="text-dark">+20 000000000</span>
-                    </div>
-                    <h4>Follow Me</h4>
-
-                    <div class="social-icons">
-
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <span class="text-dark">Facebook</span>
-                        </a>
-
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                            <span class="text-dark">Instagram</span>
-                        </a>
-
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                            <span class="text-dark">LinkedIn</span>
-                        </a>
-
-                    </div>
-                </div>
             </div>
         </div>
 
-            <div class="py-5  text-light text-center">
-        <div class="container">
-            <h3>Let's Work Together!</h3>
-            <p>Have a project or idea? Get in touch and let's create something amazing.</p>
-            <a href="#contact" class="btn btn-light mt-2">Contact Me</a>
-        </div>
+        <div class="py-5  text-light text-center">
+            <div class="container">
+                <h3>Let's Work Together!</h3>
+                <p>Have a project or idea? Get in touch and let's create something amazing.</p>
+                <a href="#contact" class="btn btn-light mt-2">Contact Me</a>
             </div>
+        </div>
     </section>
 
 

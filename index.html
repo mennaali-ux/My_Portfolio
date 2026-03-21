@@ -11,6 +11,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -52,7 +53,7 @@
             </nav>
             <div class="hero-content">
                 <div class="row">
-                    <div class="col-lg-6 h-text">
+                    <div class="col-lg-6 h-text" data-aos="fade-right">
                         <h1 class="text-light p-2"><span>Hi</span> ,I'm Menna Ali Hassan</h1>
                         <h3 class="text-light ">Front-End Developer & Web Designer</h3>
                         <p class="text-light p-2 ">I create modern, responsive websites using HTML, CSS, and JavaScript.
@@ -64,8 +65,8 @@
                             <div class="i-d"><i class="fa-brands fa-linkedin"></i></div>
                         </div>
                     </div>
-                    <div class="col-lg-6 ">
-                        <img src="pr-img/hero.jpeg" alt="Menna" class="img-fluid hero-img shadow w-50">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <img src="pr-img/-removebg-preview.png" alt="Menna" class="img-fluid hero-img shadow w-50">
                     </div>
                 </div>
             </div>
@@ -75,15 +76,15 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center p-4">
+                <div class="col-lg-12 text-center ">
                     <h2>About Me</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <img src="pr-img/about.jpeg" alt="" class="w-75 shadow-lg">
+               <div class="col-lg-6" data-aos="fade-right">
+                    <img src="pr-img/about.jpeg" alt="" class="about-img w-75 shadow-lg">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 h-text" data-aos="fade-right">
                     <h5 class="fs-2 jo">My journey</h5>
                     <h6 class="p-2">I am currently a student at WE School for Applied Technology, focusing on Web
                         Development,
@@ -95,7 +96,7 @@
                         working on
                         personal projects that challenge me to grow.</h6>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-right">
                             <div class="card border shadow ">
 
                                 <div class="card-body">
@@ -105,7 +106,7 @@
                             </div>
 
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-right">
                             <div class="card border shadow ">
 
                                 <div class="card-body">
@@ -118,7 +119,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-right">
                             <div class="card border shadow ">
                                 <div class="card-body">
                                     <h4 class="card-title">💻</h4>
@@ -145,7 +146,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card shadow">
+                    <div class="card shadow" data-aos="zoom-in">
                         <img class="card-img-top" src="pr-img/project one.jpg" alt="Title" />
                         <div class="card-body">
                             <h4 class="card-title">My First Web Page</h4>
@@ -161,7 +162,7 @@
 
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card shadow">
+                    <div class="card shadow" data-aos="zoom-in">
                         <img class="card-img-top w-100" src="pr-img/project two.jpg" alt="Title" />
                         <div class="card-body">
                             <h4 class="card-title">Restaurant Website</h4>
@@ -176,7 +177,7 @@
 
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card shadow">
+                    <div class="card shadow" data-aos="zoom-in">
                         <img class="card-img-top" src="pr-img/priject 3.jpg" alt="Title" />
                         <div class="card-body">
                             <h4 class="card-title">Interactive Restaurant Website</h4>
@@ -313,8 +314,8 @@
     </footer>
 
     <button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
-
-
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script> AOS.init();</script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
