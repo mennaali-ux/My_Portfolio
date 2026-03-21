@@ -11,7 +11,7 @@ body {
 }
 
 #hero {
-  background: url("/pr-img/hero-bg.jpeg");
+  background: url("../pr-img/hero-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -136,13 +136,13 @@ h2,
 
 }
 #contact {
-  background: url("/pr-img/contact-bg.jpeg");
+  background: url("../pr-img/contact-bg.jpeg");
   margin-top: 300px;
   min-height: 100vh;
  text-align: center;
 }
 #contact-p{
-    background: url("/pr-img/contact-bg.jpeg"); 
+    background: url("../pr-img/contact-bg.jpeg"); 
      min-height: 100vh;
     text-align: center;
 }
