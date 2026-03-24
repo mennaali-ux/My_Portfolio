@@ -583,7 +583,7 @@ transition: transform 0.3s ease;
   overflow: hidden;
 }
 
-#projects .card::after {
+/* #projects .card::after {
   content: "";
   position: absolute;
   top: 0;
@@ -595,9 +595,9 @@ transition: transform 0.3s ease;
   
   opacity: 0;
   transition: 0.4s;
-}
+} */
 
-#projects .card:hover::after {
+/* #projects .card:hover::after {
   opacity: 1;
 }
 #projects .card::after {
@@ -608,7 +608,7 @@ transition: transform 0.3s ease;
     rgba(255,255,255,0.1),
     rgba(255,255,255,0.4)
   );
-}
+} */
 #contact-p form {
   background: #fff;
   padding: 30px;
@@ -719,4 +719,6 @@ textarea.success {
   margin: 0 auto;
   line-height: 1.5;
 }
+
+
 
