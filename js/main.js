@@ -1,27 +1,63 @@
 document.getElementById("contactForm").addEventListener("submit", function(e){
 
-let name = document.getElementById("name").value;
-let email = document.getElementById("email").value;
-let message = document.getElementById("message").value;
+    e.preventDefault(); // ⛔ لازم في الأول عشان يمنع الإرسال
 
-if(name === "" || email === "" || message === ""){
-alert("Please fill all fields");
-e.preventDefault();
-}
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let message = document.getElementById("message");
+
+    let isValid = true;
+
+    // clear errors
+    document.querySelectorAll(".error-message").forEach(el => el.innerText = "");
+
+    function showError(input, msg){
+        input.nextElementSibling.innerText = msg;
+        input.classList.add("error-border");
+        isValid = false;
+    }
+
+    // reset border
+    [name, email, message].forEach(i => i.classList.remove("error-border"));
+
+    // Name validation
+    if(name.value.trim() === ""){
+        showError(name, "Name is required");
+    } else if(name.value.trim().length < 3){
+        showError(name, "Name must be at least 3 characters");
+    }
+
+    // Email validation
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(email.value.trim() === ""){
+        showError(email, "Email is required");
+    } else if(!emailPattern.test(email.value)){
+        showError(email, "Invalid email format");
+    }
+
+    // Message validation
+    if(message.value.trim() === ""){
+        showError(message, "Message is required");
+    } else if(message.value.trim().length < 10){
+        showError(message, "Message must be at least 10 characters");
+    }
+
+    // لو كله صح
+    if(isValid){
+        alert("Form submitted successfully ✅");
+        this.submit(); // أو ابعتيه للسيرفر لو عندك backend
+    }
 
 });
+
 const backToTop = document.getElementById("backToTop");
-
-
 window.onscroll = function() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 100) {
     backToTop.style.display = "flex";
   } else {
     backToTop.style.display = "none";
   }
 };
-
-
 backToTop.addEventListener("click", function(){
   window.scrollTo({
     top: 0,
@@ -29,10 +65,12 @@ backToTop.addEventListener("click", function(){
   });
 });
 
-document.getElementById("contactForm").onsubmit = function(e) {
-  e.preventDefault();
-  alert("Message sent successfully! 🚀");
-};
+
+
+// document.getElementById("contactForm").onsubmit = function(e) {
+//   e.preventDefault();
+//   alert("Message sent successfully! 🚀");
+// };
 
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("contactForm");
