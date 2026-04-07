@@ -9,12 +9,6 @@ This is my personal portfolio website built to showcase my skills, projects, and
 ### Home Page
 ![Home](https://raw.githubusercontent.com/mennaali-ux/My_Portfolio/main/home.png)
 
-### About Section
-![About](https://raw.githubusercontent.com/mennaali-ux/My_Portfolio/main/about.png)
-
-### Projects Section
-![Projects](https://raw.githubusercontent.com/mennaali-ux/My_Portfolio/main/projcts.png)
-
 ---
 
 ## 🌐 Live Demo
